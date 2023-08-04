@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "606137744564",
+    "project_id": "daily-health-296c7",
+    "storage_bucket": "daily-health-296c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606137744564:android:b68211840638a9498c6be1",
+        "android_client_info": {
+          "package_name": "com.jisan.daily_health"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606137744564-4cm3lggd93kk290enbhpkkf25dm6vs03.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgj8mr1KCG0wjysfmJ_ssHh94O4fFPALE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606137744564-4cm3lggd93kk290enbhpkkf25dm6vs03.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

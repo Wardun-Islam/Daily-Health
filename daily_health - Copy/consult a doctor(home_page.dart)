@@ -1,0 +1,82 @@
+//import 'package:docappoin/models/doctor.dart';
+import 'package:flutter/material.dart';
+class HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+
+
+class _HomePageState extends State<HomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0.0,
+        brightness: Brightness.light,
+        iconTheme: IconThemeData(
+            color: Colors.black87
+        ),
+      ),
+      drawer: Drawer(
+          child: Container()// Populate the Drawer in the next step.
+      ),
+      body: SingleChildScrollView(
+        child: Container(
+          color: Colors.white,
+          padding: EdgeInsets.symmetric(vertical: 10,horizontal: 24),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              SizedBox(height: 10,),
+              Text("Find Your \nConsultation", style: TextStyle(
+                  color: Colors.black87.withOpacity(0.8),
+                  fontSize: 30,
+                  fontWeight: FontWeight.w600
+              ),),
+              SizedBox(height: 40,),
+              Container(
+                padding: EdgeInsets.symmetric(horizontal: 24),
+                height: 50,
+                decoration: BoxDecoration(
+                    color: Color(0xffEFEFEF),
+                    borderRadius: BorderRadius.circular(14)
+                ),
+                child: Row(
+                  children: <Widget>[
+                    Icon(Icons.search),
+                    SizedBox(width: 10,),
+                    Text("Search", style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 19
+                    ),)
+                  ],
+                ),
+              ),
+              SizedBox(height: 30,),
+              Text("Categories", style: TextStyle(
+                  color: Colors.black87.withOpacity(0.8),
+                  fontSize: 25,
+                  fontWeight: FontWeight.w600
+              ),),
+
+              //DoctorsTile()
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+
+
+AppBar _buildAppBar(){
+  return AppBar(
+    backgroundColor: Colors.white,
+    elevation: 0,
+    brightness: Brightness.light,
+    //iconTheme: IconThemeData(color: HexColor('#150047')),
+  );
+}
